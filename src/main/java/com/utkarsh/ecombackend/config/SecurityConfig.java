@@ -40,7 +40,8 @@ public class SecurityConfig {
                                 .requestMatchers(
                                         "/user/registerintent",
                                         "/user/register",
-                                        "/user/login"
+                                        "/user/login",
+                                        "/healthcheck"
                                 )
                                 .permitAll()
                                 .anyRequest().authenticated())
